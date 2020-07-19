@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1">
+    <title>videos</title>
+    <link rel="stylesheet" href="{% static '/videos/style.css' %}">
+</head>
+<body>
+    <p>
+        <a href="{% url 'videos:video_list' %}">動画一覧</p>
+        <a href="{% url 'videos:video_create' %}">アップロード</a>
+    </p>
+    {% block content %}{% endblock %}
+</body>
+</html>
